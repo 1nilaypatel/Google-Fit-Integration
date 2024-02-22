@@ -1,7 +1,16 @@
-import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import SignUp from './pages/SignUp.jsx';
 
 export default function App() {
   return (
-    <div className='text-red-500'>App</div>
+  <div>
+    <Router>
+      <Routes>
+        <Route path={"/"} element={<SignUp />} />
+        <Route path={"/home"} element={<Home />} />
+      </Routes>
+    </Router>
+  </div>
   )
 }
