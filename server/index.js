@@ -2,6 +2,18 @@ const express = require("express");
 const session = require("express-session");
 const { google } = require("googleapis");
 const cors = require("cors");
+const path = require("path");
+
+const __dirname = path.resolve();
+
+// Express application
+const app = express();
+
+app.use(express.static(path.join(__dirname, '/client/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+});
 
 // Load OAuth2 credentials from creds.json file
 const credentials = require("./creds.json");
@@ -18,9 +30,6 @@ const oAuth2Client = new google.auth.OAuth2(
 const SCOPES = [
   "https://www.googleapis.com/auth/fitness.activity.read",
 ];
-
-// Express application
-const app = express();
 
 // Enable Cross-Origin Resource Sharing (CORS)
 app.use(cors({
