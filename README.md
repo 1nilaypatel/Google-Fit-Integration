@@ -8,7 +8,7 @@ This project aims to set up Google Fit authorization and retrieve steps data usi
 
 ## Implementation Insights:
 - Ensured comprehensive commenting in the codebase for better comprehension and maintainability.
-- Shared creds.json file openly for testing purposes during the development phase.
+- Shared `creds.json` file openly for testing purposes during the development phase.
 - Implemented error handling for various scenarios during authorization and step count data retrieval.
 
 ## Technical Requirements:
@@ -38,11 +38,11 @@ This project aims to set up Google Fit authorization and retrieve steps data usi
     ```bash
     cd client
 
-5. **Install NPM dependencies:**
+5. **Install NPM dependencies for client side:**
     ```bash
     npm install
 
-6. **Run the project:**
+6. **Run the client side:**
     ```bash
     npm run dev
 
