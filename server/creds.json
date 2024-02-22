@@ -1,0 +1,10 @@
+{"web":{
+  "client_id":"984113795274-m5k1s59tb4s16uvvic71vd9g3dsje49u.apps.googleusercontent.com",
+  "project_id":"my-project-for-fitness-415105",
+  "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+  "token_uri":"https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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",
+  "redirect_uris":["http://localhost:8000/auth/google/callback","http://localhost"],
+  "javascript_origins":["http://localhost:8000","http://localhost"]
+  }
+}
